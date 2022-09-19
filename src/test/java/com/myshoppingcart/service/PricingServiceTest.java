@@ -33,7 +33,7 @@ public class PricingServiceTest {
     void testGet1FreeDiscount() {
         Basket basket = new Basket();
         basket.getItems().add(new BasketItem(PRODUCT1,1));
-        basket.getItems().add(new BasketItem(PRODUCT2,1));
+        basket.getItems().add(new BasketItem(PRODUCT2,2));
 
         double total = service.getTotalPriceGet1FreeDiscount(basket, PRODUCT2.getProductId());
 
